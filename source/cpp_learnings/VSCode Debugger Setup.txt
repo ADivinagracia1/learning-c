@@ -1,0 +1,7 @@
+Setting up debugger in VSCode files
+1. Go to debugging section
+2. Click dropdown of run and debug
+3. Add condifuration to "c/c++: (gdb) launch"
+4. put this in miDebuggerPath: "C:\\MinGW\\bin\\gdb.exe"
+5. Setup projet workspace through program: 
+	"C:\Users\andre\cpp_projects\cpp_learnings\00_helloworld\helloworld.exe"

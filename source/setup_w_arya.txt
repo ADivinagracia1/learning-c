@@ -1,0 +1,30 @@
+Terminal
+- a command prompt
+- notice /mnt/c/...
+- 
+
+
+ctrl+c cancels operation
+
+Reccomend:	
+Baisc:  	CMD
+Linux/CMake:	WSL
+
+
+Steps to Run:
+
+1. Compile:	"g++ filename.cpp" or "g++ filename.cpp -o outname"	
+2. Run:		./a     (WSL Linux)
+		./a.exe (Powershell)
+		a	   (CMD)
+		
+
+
+NOTE: Anything you do in vscode is a front end
+
+DEBUGGING
+GDB a in terminal
+
+
+
+
