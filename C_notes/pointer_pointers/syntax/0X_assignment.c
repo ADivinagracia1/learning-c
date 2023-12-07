@@ -11,5 +11,7 @@ int main(void){
     *pt = 12;
     printf("%d %p %p %d\n", num, &num, pt, *pt);
 
+    
+
     return 0;
 }
