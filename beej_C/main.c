@@ -1,29 +1,19 @@
 #include <stdio.h>
 #define SIZE 50
 
+struct TestStruct {
+    int a;
+    int b;
+    int c;
+    int arr[0];
+};
+
 // REVERSE A STRING (CLASSIC)
 int main(void){
 
-    char word[SIZE] = "", rev_word[SIZE] = "";
-    char *word_pt = word, *rev_pt = rev_word;
+    // Struct: 12 Bytes + 
+    // struct TestStruct *meep = (struct TestStruct*)malloc(sizeof(struct TestStruct) + sizeof(int) * 10 );
 
-    printf("input a word: ");
-    scanf("%s", word);
-
-    printf("word: %s\n", word);
-
-    // Go to end of word
-    while ( *word_pt != '\0' ) word_pt++;
-
-    // Walk backwards of the original string, assign it to new array
-    while ( *word_pt != *word ) {
-        word_pt--;
-        // printf("%c, ", *word_pt);
-        *rev_pt = *word_pt; 
-        rev_pt++;
-    }
-
-    printf("revd: %s\n", rev_word);
-
+    printf("Struct Size: %ld\n", sizeof(struct TestStruct));
     return 0;
 }
