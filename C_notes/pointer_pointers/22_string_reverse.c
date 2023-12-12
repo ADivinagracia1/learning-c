@@ -13,6 +13,7 @@ int main(int argc, char const *argv[])
 
     // Go to end of word
     while ( *word_pt != '\0' ) word_pt++;
+    // note: *word_pt lands at end of memory: '\0'
 
     // Walk backwards of the original string, assign it to new array
     while ( *word_pt != *word ) {
