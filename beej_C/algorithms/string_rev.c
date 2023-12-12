@@ -13,16 +13,17 @@ int main(void) {
 
     char *in_ptr = buff, *out_ptr = out;
 
-    while ( *in_ptr != '\0' ) in_ptr++;
-    
-    while ( *in_ptr != *buff ) {
-        in_ptr--;
-        *out_ptr = *in_ptr;
-        out_ptr++;
+    while ( *in_ptr != '\0' ) {
+        printf("%c-", *in_ptr);
+        in_ptr++;
     }
+    // while ( *in_ptr != *buff ) {
+    //     in_ptr--;
+    //     *out_ptr = *in_ptr;
+    //     out_ptr++;
+    // }
 
-    printf("out: %s\n", out);
-
+    // printf("out: %s\n", out);
 
     return 0;
 }
