@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 // Macro for printing (Compiler time operations)
-#define DEBUG_PRINT 1
+#define DEBUG_PRINT 0
 #if DEBUG_PRINT
 #define DEBUG_PRINTLN(fmt, ...) \
     do { \
@@ -57,9 +57,10 @@ void PrintNode(struct Node* head) {
 
     struct Node* cursor = head;
     while (cursor != NULL) {
-        DEBUG_PRINTLN("val: %c", cursor->val);
+        printf("%c-", cursor->val);
         cursor = cursor->next;
     }    
+    printf("\n");
 
     // THIS IS WRONG, WE NEED A CURSOR. We do NOT want to lose the location of head
     // while ( head ) {
