@@ -73,28 +73,35 @@ void printListBlocks(struct Node* head){
 
 int main(void){
 
-    // struct Block largeG = { .data = {
-    //     {' ', ' ', ' ', 'G', 'G', 'G', },
-    //     {' ', ' ', 'G', ' ', ' ', ' ', },
-    //     {' ', ' ', 'G', ' ', 'G', 'G', },
-    //     {' ', ' ', 'G', ' ', ' ', 'G', },
-    //     {' ', ' ', 'G', ' ', ' ', 'G', },
-    //     {' ', ' ', ' ', 'G', 'G', ' ', },
-    // }};
+    struct Block largeG = { .data = {
+        {' ', ' ', ' ', 'G', 'G', 'G', },
+        {' ', ' ', 'G', ' ', ' ', ' ', },
+        {' ', ' ', 'G', ' ', 'G', 'G', },
+        {' ', ' ', 'G', ' ', ' ', 'G', },
+        {' ', ' ', 'G', ' ', ' ', 'G', },
+        {' ', ' ', ' ', 'G', 'G', ' ', },
+    }};
 
-    // struct Node* head = NULL;
+    struct Node* head = NULL;
 
-    // insertBack(&head, largeG);
-    // insertBack(&head, largeG);
-    // insertBack(&head, largeG);
-    // printListBlocks(head);
+    insertBack(&head, largeG);
+    insertBack(&head, largeG);
+    insertBack(&head, largeG);
+    printListBlocks(head);
+
+    // insertBack(&head, 'i');
+    // insertBack(&head, 't');
+    // insertBack(&head, 'a');
 
 
-    int x[12];
-    printf("%zu\n", sizeof x);
-    printf("%zu\n", sizeof(int));
-    printf("%zu\n", sizeof(x) / sizeof(int));
-
+    // insert(&head, 'p');
+    // insert(&head, 'i');
+    // insert(&head, 't');
+    // insert(&head, 'a');
+    // insert(&head, 'h');
+    // printList(head);
+    
+    freeList(head);
 
     return 0;
 }
