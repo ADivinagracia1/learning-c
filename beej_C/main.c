@@ -1,116 +1,42 @@
+// SOURCE:
+// https://beej.us/guide/bgc/html/split/manual-memory-allocation.html
+
 #include <stdio.h>
 #include <stdlib.h>
 
-void printArray(int *arr){
-    printf("[ ");  
-    // ++arr; // for expressions
-    // ++arr;
-    while ( *arr != 0 ) {
-        printf("%d", *arr);
-        ++arr;
-        if ( *arr != 0 ) {
-            printf(", ");
-        }
-    }    
-    printf(" ]\n");
-}
+void TestMallocRealloc(){
+    // Allocate space for 20 floats
+    float *p = malloc(sizeof *p * 20);  // sizeof *p same as sizeof(float)
 
-void printArrayValue(int arr[], int size){
-    printf("[ ");
-    for (int i = 0; i < size; ++i) {
-        printf("%d", arr[i]);
-        if (i < size - 1) {
-            printf(", ");
-        }
+    // Assign them fractional values 0.0-1.0:
+    for (int i = 0; i < 20; i++)
+        p[i] = i / 20.0;
+
+    // But wait! Let's actually make this an array of 40 elements
+    float *new_p = realloc(p, sizeof *p * 40);
+
+    // Check to see if we successfully reallocated
+    if (new_p == NULL) {
+        printf("Error reallocing\n");
     }
-    printf(" ]\n");
-}
 
-void TestForPrintingArray(){
-    int a[5] = {22, 37, 3490};
-    int b[5] = {22, 37, 3490, 0, 0};
-    int c[100] = {0};
+    // If we did, we can just reassign p
+    p = new_p;
 
-    int *a_pt = a, *b_pt = b, *c_pt = c;
+    // And assign the new elements values in the range 1.0-2.0
+    for (int i = 20; i < 40; i++)
+        p[i] = 1.0 + (i - 20) / 20.0;
 
-    printf("Arrays traversed by pointers\n");
-    printArray(a_pt);
-    printArray(b_pt);
-    printArray(c_pt);
+    // Print all values 0.0-2.0 in the 40 elements:
+    for (int i = 0; i < 40; i++)
+        printf("%f\n", p[i]);
 
-    printf("\nArrays traversed by iteration\n");
-    printArrayValue(a, 5);
-    printArrayValue(b, 5);
-    printArrayValue(c, 100);
-}
-
-#define COUNT 5
-
-
-// ===================== ARRAYS AND POINTERS IN FUNCTION PARAMETERS =====================
-
-void times2(int *a, int len){
-    for (int i=0; i < len; i++)
-        printf("%d-", a[i] * 2);
-    printf("\n");
-}
-
-void times3(int a[], int len){
-    for (int i=0; i < len; i++)
-        printf("%d-", a[i] * 3);
-    printf("\n");
-}
-
-void times4(int a[5], int len){
-    for (int i=0; i < len; i++)
-        printf("%d-", a[i] * 4);
-    printf("\n");
-}
-
-
-// ===================== PASSING ARRAYS AS PARAMETERS =====================
-
-void mult_elem_2(int *a, int len){
-    for (int i=0; i<len; i++)
-        a[i]*=2;
-}
-
-// MULTIDEMENTONAL ARRAY AS PARAMETERS
-void print_2D_array(int a[2][3]){
-    for (int row = 0; row < 2; row++) {
-        for (int col = 0; col < 3; col++)
-            printf("%d ", a[row][col]);
-        printf("\n");
-    }
+    // Free the space
+    free(p);
 }
 
 int main(void){
 
-    // TestForPrintingArray();
+    TestMallocRealloc();
 
-// INSERTING PROPERTY
-    // int a[COUNT] = {[COUNT-3]=3, 2, 1};
-    // int* a_ptr = a;
-    // printArray(a_ptr);
-
-// ARRAYS AND POINTERS IN FUNCTION PARAMETERS
-    // int x[5] = {11, 22, 33, 44, 55};
-    // times2(x, 5);
-    // times3(x, 5);
-    // times4(x, 5);
-
-// PASSING ARRAYS AS PARAMETERS
-    // int x[5] = {1, 2, 3, 4, 5};
-    // mult_elem_2(x, 5);
-    // for (int i = 0; i < 5; i++)
-    //     printf("%d\n", x[i]);  // 2, 4, 6, 8, 10!
-
-// MULTIDEMENTONAL ARRAY AS PARAMETERS
-    int x[2][3] = {
-        {1, 2, 3},
-        {4, 5, 6}
-    };
-
-    print_2D_array(x);
-    return 0;
 }

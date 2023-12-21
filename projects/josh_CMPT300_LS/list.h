@@ -19,6 +19,8 @@ struct Node_s {
 typedef struct {
     // (You may modify the struct contents for your needs)
     Node* pFirst;
+    Node* pCursor;
+    int cursorFlag;
 } List;
 
 // Maximum number of unique lists the system can support
