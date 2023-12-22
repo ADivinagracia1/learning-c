@@ -1,3 +1,6 @@
+// Source:
+//  https://beej.us/guide/bgc/html/split/arrays.html#arrays
+
 #include <stdio.h>
 #include <stdlib.h>
 
