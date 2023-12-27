@@ -71,11 +71,11 @@ void PrintNode(struct Node* head) {
 
 void FreeMemory(struct Node* head) {
     struct Node* cursor = head;
-    struct Node* next;
+    struct Node* temp;
     while( cursor != NULL ) {
-        next = cursor->next;    // save the next before deleting
+        temp = cursor->next;    // save the next before deleting
         free(cursor);           // free the memory
-        cursor = next;          // assign cursor to next
+        cursor = temp;          // assign cursor to next
     }
 }
 
