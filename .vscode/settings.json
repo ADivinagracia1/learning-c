@@ -2,6 +2,9 @@
     "files.associations": {
         "array": "c",
         "vector": "c",
-        "stack": "c"
+        "stack": "c",
+        "stdio.h": "c",
+        "glfw3.h": "c",
+        "leif.h": "c"
     }
 }
