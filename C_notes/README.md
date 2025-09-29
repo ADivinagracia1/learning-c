@@ -1,40 +1,32 @@
-# C_notes
+ # C notebook in Github
 
-Initial C language curriculum provided by the following prompt from ChatGPT
+Welcome to where I keep random notes about the C and C++ programming language. I once learned C++ at some point in my life. Now, I need to start from the basics again and work my way from there. I am pretty excited to get into this again to be honest, and I want to seriously try to refresh myself. No skipping steps
 
-I am an non-beginner python programmer that has an electrical engineering background and has experience with firmware and Linux. I am not an advanced or intermediate programmer, but i am not a beginner. I have minimal experience with embedded C programming and I want to get deep into learning C from both the top-down high level programming perspective, and the bottom-up electrical engineering perspective. 
-Make me a curriculum in the form of common problem sets that are simple C projects that can take me from zero C language experience to easy-leetcode level questions. Just easy enough that i can get used to the syntax again, but difficult enough for me to problem-solve my way to the solution. 
+I typically have a scrap ringed notebook from Muji as where I write my notes. However, seeing this as a digital list changes that. These notes are the ones I will reference whenever I need anything C-related. I come from the background of electrical, and I want to tailor my experience particulary towards embedded systems. I am comfortable enough in this environment to use the tools within my disposal, but I want to be proficient. This notebook is the journey where I become proficient. I want to be a wizzard, where my tomes and spells are not perfomed through runes and glyphs, they are instead cast through electricty and programs. As tradution with all my notebooks, I write the passage of Miyamoto Musashi. Dokkodo - the way of walking alone. Its supersticous, but I find it a way to make my experience a little more fun.
 
-### Level 1: Basics of C Programming
-- Write a program to print "Hello, World!" to the console.
-- Write a program to take user input (a number) and print its square.
-- Write a program to calculate and print the sum of two numbers.
-- Write a program to check whether a given number is even or odd.
-- Write a program to find the maximum of three numbers.
+## Dokkodo - Miyamoto Musashi's Way of Walking Alone
+1. Accept Everything just the way it is // Do not oppose the ways of the world
+2. Do not seek pleasure for its own sake
+3. Do not, under any circumstances, depend on a partial feeling
+4. Think lightly of yourself, and think deeply of the world
+5. Be detached from desire your whole life long
+6. Do not regret what you have done
+7. Never be jealous
+8. Never let yourself be saddened by a separation
+9. Resentment and complaint are inapproprate for oneself and others
+10. DO not let yourself be guided by the feeling of love or lust
+11. In all things have no preferences
+12. Be indifferent to where you live
+13. Do not persue the taste of good food
+14. Do not hold on to posessions you no longer need 
+15. DO not act following customary belifs
+16. Do not collect or practice with weapons beyond what is useful
+17. Do not fear death
+18. Do not seek to posses either goods or fiefs for your old age
+19. Respect Buddha and the gods without counting on their help
+20. You may abandon your body but you must preserve your honor
+21. Never stray from the Way
 
-### Level 2: Control Flow and Functions
-- Write a program to print all prime numbers between 1 and 100.
-- Write a program to check whether a given year is a leap year or not.
-- Write a program to find the factorial of a given number using a recursive function.
-- Write a program to reverse a given string using a function.
-- Write a program to implement a simple calculator using functions.
+My way always came from exploration and expression. I played a lot of videogames when i was younger, I became a damn good engineer at one point, and now at this point in time, I am a pretty gnarly rock climber. Lets rewind back my way and redirect that energy towards engineering again. I hope this works!
 
-### Level 3: Arrays and Pointers
-- Write a program to find the largest element in an array.
-- Write a program to sort an array in ascending order.
-- Write a program to multiply two matrices.
-- Write a program to concatenate two strings.
-- Write a program to reverse the order of elements in an array.
 
-### Level 4: File Handling and Structures
-- Write a program to read and write a text file.
-- Write a program to store and display student records using structures.
-- Write a program to implement a stack using an array.
-- Write a program to implement a queue using a linked list.
-- Write a program to count the number of words in a given text file.
-### Level 5: Advanced Concepts
-- Write a program to implement binary search.
-- Write a program to implement a linked list and perform basic operations.
-- Write a program to implement a binary tree and perform basic operations.
-- Write a program to sort an array using the merge sort algorithm.
-- Write a program to reverse a linked list.
