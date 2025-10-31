@@ -3,6 +3,7 @@
 void hello_world();
 void square();
 void sum();
+void print_string();
 void odd_even();
 void max_of_3();
 
@@ -10,14 +11,21 @@ int main(){
 
     // hello_world();
     // square();
+    print_string();
     // sum();
     // odd_even();
-    max_of_3();
+    // max_of_3();
     return 0;
 }
 
 void hello_world(){
     printf("Hello World!");
+}
+
+void print_string(){
+    char str[10];
+    scanf("%s", str);
+    printf("%s\n", str);
 }
 
 void square(){

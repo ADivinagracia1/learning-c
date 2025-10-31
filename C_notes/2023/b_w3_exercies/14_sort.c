@@ -44,7 +44,7 @@ int main(int argc, char const *argv[])
 
     for (int i = 0; i < sz; i++) {
         printf("arr[%d]: ", i);
-        scanf("%d", arr+i);
+        scanf("%d", arr);
     }
 
     printf("Start Array: \t");

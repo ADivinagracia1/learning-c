@@ -19,15 +19,15 @@ int main(int argc, char** argv)
     printf("val of fx: %f\n", *fx_ptr);
     printf("val of cht: %c\n", *cht_ptr);
 
-    // Addresses of the values (aka values of the pointers)
-    printf("adr of m: %p\n",m_ptr);
-    printf("adr of fx: %p\n",fx_ptr);
-    printf("adr of cht: %p\n",cht_ptr);
+    // // Addresses of the values (aka values of the pointers)
+    // printf("adr of m: %p\n",m_ptr);
+    // printf("adr of fx: %p\n",fx_ptr);
+    // printf("adr of cht: %p\n",cht_ptr);
 
-    // * and & operator for VALUES --> What does the address point to? = the value
-    printf("val of m: %d\n", *(&m));
-    printf("val of fx: %f\n", *(&fx));
-    printf("val of cht: %c\n", *(&cht));
+    // // * and & operator for VALUES --> What does the address point to? = the value
+    // printf("val of m: %d\n", *(&m));
+    // printf("val of fx: %f\n", *(&fx));
+    // printf("val of cht: %c\n", *(&cht));
     
 
 
